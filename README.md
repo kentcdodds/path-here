@@ -31,6 +31,10 @@ var somePath = here('some/path');
 var somePathWithMultipleParams = here('some', 'path'); // <-- same result as previous
 var withTrailingSlash = here('src/'); // <-- result has a trailing slash
 var withPrefixSlash = here('/src'); // <-- same as here('src');
+
+// specify a different root other than process.cwd()
+var there = here.dir('/usr');
+var bin = there('bin');
 ```
 
 # Other info
