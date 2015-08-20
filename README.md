@@ -1,5 +1,11 @@
 # path-here
 
+Status:
+[![npm version](https://img.shields.io/npm/v/path-here.svg?style=flat-square)](https://www.npmjs.org/package/path-here)
+[![npm downloads](https://img.shields.io/npm/dm/path-here.svg?style=flat-square)](http://npm-stat.com/charts.html?package=path-here&from=2015-08-01)
+[![Build Status](https://img.shields.io/travis/kentcdodds/path-here.svg?style=flat-square)](https://travis-ci.org/kentcdodds/path-here)
+[![Code Coverage](https://img.shields.io/codecov/c/github/kentcdodds/path-here.svg?style=flat-square)](https://codecov.io/github/kentcdodds/path-here)
+
 This micro-lib will take your code from this:
 
 ```javascript
