@@ -9,10 +9,12 @@ node_js:
   - iojs
 before_install:
   - npm i -g npm@^2.0.0
-  - pip install codecov
 before_script:
   - npm prune
+script:
+  - npm run test
+  - npm check-coverage
 after_success:
-  - codecov
+  - npm run report-coverage
   - npm run semantic-release
 
