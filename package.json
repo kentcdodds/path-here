@@ -1,0 +1,40 @@
+{
+  "name": "path-here",
+  "description": "A simple module to get the path with __dirname",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover -x *.test.js _mocha -- -R spec index.test.js",
+    "start": "istanbul cover -x *.test.js _mocha -- -R spec index.test.js -w .",
+    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentcdodds/path-here.git"
+  },
+  "keywords": [
+    "path",
+    "resolve",
+    "__dirname"
+  ],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentcdodds/path-here/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/path-here#readme",
+  "devDependencies": {
+    "chai": "3.2.0",
+    "commitizen": "1.0.4",
+    "cz-conventional-changelog": "1.1.0",
+    "ghooks": "0.3.2",
+    "istanbul": "0.3.18",
+    "semantic-release": "^4.1.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test && npm run check-coverage && echo 'pre-commit checks good 👍'"
+    }
+  }
+}
