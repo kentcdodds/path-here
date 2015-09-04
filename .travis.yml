@@ -3,6 +3,10 @@ language: node_js
 cache:
   directories:
     - node_modules
+branches:
+  only:
+    - master
+    - latest
 notifications:
   email: false
 node_js:
