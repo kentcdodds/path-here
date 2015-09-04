@@ -39,5 +39,8 @@
     "ghooks": {
       "pre-commit": "npm run test && npm run check-coverage && echo 'pre-commit checks good 👍'"
     }
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog/"
   }
 }
