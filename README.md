@@ -10,7 +10,7 @@ This micro-lib will take your code from this:
 
 ```javascript
 var path = require('path');
-var srcDirectory = path.resolve(__dirname, 'src');
+var srcDirectory = path.resolve('src');
 ```
 
 to this:
@@ -20,7 +20,13 @@ var here = require('path-here');
 var srcDirectory = here('src');
 ```
 
-It's pretty simple, but it just makes things a little more clear.
+**Note**: This is actually not all that useful. Originally when I made this I thought it was doing something it wasn't. However, something more useful that it allows you to do (and the reason I haven't deprecated it) is this:
+
+```javascript
+var here = require('path-here');
+var there = here.dir('~/Developer/starwars-names');
+var starWarsNamesSrc = there('src');
+```
 
 # Examples
 
