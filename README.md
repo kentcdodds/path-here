@@ -47,3 +47,4 @@ var bin = there('bin');
 
 LICENSE -> MIT
 
+TEST
